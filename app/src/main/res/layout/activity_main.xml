@@ -1,9 +1,10 @@
 <layout>
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context="net.suntrans.appmanager.activity.MainActivity">
 
         <android.support.v7.widget.Toolbar
@@ -15,7 +16,22 @@
 
         </android.support.v7.widget.Toolbar>
 
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
 
+        </FrameLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
+        <android.support.design.widget.BottomNavigationView
+            android:elevation="6dp"
+            android:background="#ffffff"
+            android:id="@id/bottomNavigation"
+            app:menu="@menu/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.BottomNavigationView>
+
+    </LinearLayout>
 </layout>

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AppManager</string>
+    <string name="app_name">三川管家</string>
+    <string name="app_des">应用智能管家</string>
 </resources>

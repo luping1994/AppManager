@@ -1,5 +1,7 @@
 package net.suntrans.appmanager
 
+import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -29,6 +31,11 @@ import net.suntrans.appmanager.utils.StatusBarCompat
             if (statusBarFix != null)
                 statusBarFix!!.layoutParams.height = statusBarHeight
         }
+    }
+
+
+    fun navigate(activity: Context, toActivity: Class<*>) {
+        activity.startActivity(Intent(activity, toActivity))
     }
 
 }
